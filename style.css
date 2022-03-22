@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg,#c2a751,#d36648);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,
+form{
+   
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,form button{
+    padding:0.5rem;
+    font-size: 2rem;
+    border:none;
+    background: white;
+}
+
+form button{
+    color:#d36648;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    color:white;
+    background: #d36648;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.todo li{
+    flex:1;
+}
+
+.trash-btn, .complete-btn{
+    background: #d36648;
+    color: white;
+    border: none;
+    padding: 1rem;
+    
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background-color: #51c260;
+    border-right: solid;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+    
+}
+
+.fa-check, 
+.fa-trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color:#d36648;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after{
+content: "\25BC";
+position: absolute;
+background: #d36648;
+top: 0;
+right: 0;
+padding: 1rem;
+pointer-events: none;
+transition: all 3 ease;
+}
+
+.select:hover::after{
+    background: white;
+    color: #d36648;
+}
+
+.todo-container{
+    display: flex;
+    flex-direction: column;
+}
+.div-with-date-container{
+    /*törölhető*/
+    width:60%;
+    border-style: solid;
+    margin-bottom: 2rem;
+}
+
+.date-div-container{
+    width:60%;
+    border-style: solid;
+    margin-bottom: 2rem;
+}
+
+
+.current-date{
+    /*törölhető*/
+    width: 100%;
+    background: gray;
+    padding: 0.9rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.choosed-date{
+    width: 100%;
+    background: gray;
+    padding: 0.9rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/*form{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+*/
+
+
+.todo-item{  
+    word-wrap: break-word;
+    width: 46%;
+   
+}
+
+
+
