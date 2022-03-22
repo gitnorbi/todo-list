@@ -178,15 +178,6 @@ transition: all 3 ease;
     text-align: center;
 }
 
-
-/*form{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-*/
-
-
 .todo-item{  
     word-wrap: break-word;
     width: 46%;
