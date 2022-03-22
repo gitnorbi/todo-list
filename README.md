@@ -34,4 +34,6 @@ Added features:
 known Bug: when you add a new todo to it the filters should be on "All" couse otherwise it not
 works properly, but it is not a priority of mine to fix it right now, maybe later.
 
+maybe i am gonna ad some aditional feture
+
 </pre>
